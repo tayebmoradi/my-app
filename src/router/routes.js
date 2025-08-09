@@ -1,15 +1,29 @@
 const routes = [
   {
     path: '/',
+    redirect: '/login'  // ریدایرکت پیش‌فرض به لاگین
+  },
+  {
+    path: '/login',
+    component: () => import('layouts/LoginLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/LoginPage.vue') }
+    ]
+  },
+  {
+    path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
+    children: [
+      { path: 'dashboard', component: () => import('pages/DashboardPage.vue'), meta: { requiresAuth: true } }
+    ]
   },
 
-  // Always leave this as last one,
-  // but you can also remove it
-  {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue'),
+    {
+    path: '/logs',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: 'dashboard', component: () => import('pages/LogsPage.vue'), meta: { requiresAuth: true } }
+    ]
   },
 ]
 
