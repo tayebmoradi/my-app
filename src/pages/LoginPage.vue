@@ -60,10 +60,12 @@ const login = async () => {
     const res = await axios.post('https://localhost:7196/api/Auth/login', {
       username: username.value,
       password: password.value
+
     })
     localStorage.setItem('token', res.data.token)
     $q.notify({ type: 'positive', message: 'ورود موفقیت‌آمیز بود' })
     router.push('/dashboard')
+    console.log(res);
     // مثلا ریدایرکت به داشبورد
   } catch (error) {
     console.error(error)
@@ -76,3 +78,7 @@ const login = async () => {
   direction: rtl; /* راست‌چین */
 }
 </style>
+
+
+
+

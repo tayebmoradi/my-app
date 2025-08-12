@@ -1,0 +1,40 @@
+export default {
+ login: 'ورود',
+  logout: 'خروج',
+  username: 'نام کاربری',
+  password: 'رمز عبور',
+  dashboard: 'داشبورد',
+  welcome: 'خوش آمدید',
+  logsWidget: 'ویجت لاگ‌ها',
+  showAllLogs: 'نمایش همه لاگ‌ها',
+  fetchLogsError: 'خطا در دریافت لاگ‌ها',
+
+  products: 'محصولات',
+  profile: 'پروفایل',
+  settings: 'تنظیمات',
+  users: 'کاربران',
+  roles: 'نقش‌ها',
+  permissions: 'دسترسی‌ها',
+  search: 'جستجو',
+  save: 'ذخیره',
+  cancel: 'انصراف',
+  delete: 'حذف',
+  edit: 'ویرایش',
+  add: 'افزودن',
+  update: 'به‌روزرسانی',
+  confirmDelete: 'آیا از حذف مطمئن هستید؟',
+  yes: 'بله',
+  no: 'خیر',
+
+  loading: 'در حال بارگذاری...',
+  noData: 'داده‌ای یافت نشد',
+  success: 'عملیات با موفقیت انجام شد',
+  error: 'خطا در انجام عملیات',
+  requiredField: 'پر کردن این فیلد الزامی است',
+
+  lastLogin: 'آخرین ورود',
+  language: 'زبان',
+  persian: 'فارسی',
+  english: 'انگلیسی'
+
+}
