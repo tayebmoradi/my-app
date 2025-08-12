@@ -49,8 +49,6 @@ import { i18n } from 'boot/i18n'
 const linksList = [
   { title: 'محصولات', caption: 'quasar.dev', icon: 'school', to: '/products' },
   { title: 'پروفایل', caption: 'github.com/quasarframework', icon: 'code', to: '/profile' },
-  { title: 'Discord Chat Channel', caption: 'chat.quasar.dev', icon: 'chat', link: 'https://chat.quasar.dev' },
-  { title: 'Forum', caption: 'forum.quasar.dev', icon: 'record_voice_over', link: 'https://forum.quasar.dev' },
   { title: 'خروج', caption: '', icon: 'logout', action: 'logout' }, // اینجا
 ]
 
