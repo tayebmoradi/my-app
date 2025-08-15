@@ -109,12 +109,12 @@ export default {
             Authorization: `Bearer ${token}`
           }
         })
-
+        console.log(response.data);
         // پر کردن داده‌های کاربر
         user.value = {
-          name: response.data.name || response.data.fullName || '--',
-          email: response.data.email || '--',
-          phoneNumber: response.data.phoneNumber || response.data.phone || '--',
+          name: response.data.name || response.data.fname + " " + response.data.lname || '--',
+          email: response.data.isActive || '--',
+          phoneNumber: response.data.phoneNumber || response.data.phoneNumber || '--',
           avatar: response.data.avatar || response.data.profileImage || '',
           userId: userId
         }
