@@ -4,7 +4,7 @@
       <div class="col-12 col-md-8">
         <q-card class="my-card">
           <q-card-section class="bg-primary text-white">
-            <div class="text-h6">پروفایل کاربری</div>
+            <div class="text-h6"> {{ $t('profile') }}</div>
           </q-card-section>
 
           <q-card-section>

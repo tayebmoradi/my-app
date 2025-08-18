@@ -9,7 +9,9 @@ export default {
   showAllLogs: 'نمایش همه لاگ‌ها',
   fetchLogsError: 'خطا در دریافت لاگ‌ها',
 
+  shop:'فروشگاه',
   products: 'محصولات',
+  productM: 'مدیریت محصولات',
   profile: 'پروفایل',
   settings: 'تنظیمات',
   users: 'کاربران',

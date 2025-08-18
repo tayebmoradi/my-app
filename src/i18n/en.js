@@ -10,6 +10,7 @@ login: 'Login',
   fetchLogsError: 'Error fetching logs',
 
   products: 'Products',
+  productM: 'ProductsManager',
   profile: 'Profile',
   settings: 'Settings',
   users: 'Users',

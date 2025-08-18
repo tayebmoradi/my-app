@@ -33,14 +33,7 @@
         />
       </q-card-actions>
 
-      <q-card-section>
-        <q-btn
-          label="دریافت اطلاعات محرمانه"
-          color="secondary"
-          @click="fetchSecret"
-          class="full-width"
-        />
-      </q-card-section>
+    
     </q-card>
   </q-page>
 </template>

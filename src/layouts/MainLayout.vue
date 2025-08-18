@@ -1,6 +1,6 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+  <q-layout view="lHh Lpr lFf" :dir="dir" >
+    <q-header elevated >
       <q-toolbar>
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
         <q-toolbar-title>Quasar App</q-toolbar-title>
@@ -47,8 +47,9 @@ import axios from 'axios'
 import { i18n } from 'boot/i18n'
 
 const linksList = [
-  { title: 'محصولات', caption: 'quasar.dev', icon: 'school', to: '/products' },
-  { title: 'پروفایل', caption: 'github.com/quasarframework', icon: 'code', to: '/profile' },
+  { title: 'محصولات', caption: 'لیست محصولات', icon: 'shopping_cart', to: '/products' },
+  { title: 'پروفایل', caption: ' اطلاعات کاربری', icon: 'account_circle', to: '/profile' },
+  { title: 'لاگ ها', caption: 'اطلاعات ورود و خروج', icon: 'list_alt', to: '/' },
   { title: 'خروج', caption: '', icon: 'logout', action: 'logout' }, // اینجا
 ]
 
@@ -111,3 +112,5 @@ function handleAction(actionName) {
   }
 }
 </script>
+
+
